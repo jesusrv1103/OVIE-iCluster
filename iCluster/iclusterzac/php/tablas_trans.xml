@@ -1,0 +1,857 @@
+<tablas>
+	<tabla> 
+         <tipo>2</tipo>  
+         <nombre>c_denue_2014</nombre>   
+         <alias>ESTABLECIMIENTOS (DENUE 2014)</alias>   
+         <campos>
+             <campo>
+                 <nombre>nom_estab</nombre>
+                 <alias>Nombre de establecimiento</alias>          
+             </campo>
+             <campo>
+                 <nombre>nombre_act</nombre>
+                 <alias>Actividad principal</alias>          
+             </campo>                     
+         </campos>
+         <agrupa>nombre_act</agrupa>
+    </tabla> 	
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>t_media</nombre>   
+         <alias>VARIABLES CLIMÁTICAS (TEMPERATURA)</alias>   
+         <campos>
+             <campo>
+                 <nombre>distinct(rango)</nombre>
+                 <alias>Rango temperatura media</alias>          
+             </campo>                                
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>precipitacion</nombre>   
+         <alias>VARIABLES CLIMÁTICAS (PRECIPITACIÓN)</alias>   
+         <campos>
+             <campo>
+                 <nombre>distinct(rango)</nombre>
+                 <alias>Rango de precipitación</alias>          
+             </campo>                                
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>climas</nombre>   
+         <alias>VARIABLES CLIMÁTICAS (CLIMA)</alias>   
+         <campos>
+             <campo>
+                 <nombre>distinct(grupoclima)</nombre>
+                 <alias>Grupos climático</alias>          
+             </campo>                                
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>uso_suelo</nombre>   
+         <alias>USO DE SUELO Y VEGETACIÓN</alias>   
+         <campos>
+             <campo>
+                 <nombre>distinct(descripcion)</nombre>
+                 <alias>Tipo</alias>          
+             </campo>                                
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>anp_estatal</nombre>   
+         <alias>ÁREA NATURAL PROTEGIDA (ESTATAL)</alias>   
+         <campos>
+             <campo>
+                 <nombre>estado</nombre>
+                 <alias>Estado</alias>          
+             </campo>                                
+			   <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>    
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>anp_federal</nombre>   
+         <alias>ÁREA NATURAL PROTEGIDA (FEDERAL)</alias>   
+         <campos>
+             <campo>
+                 <nombre>estados</nombre>
+                 <alias>Estado</alias>          
+             </campo>                                
+			   <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>    
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>3</tipo>  
+         <nombre>c_falla</nombre>   
+         <alias>FALLAS</alias>   
+         <campos>
+             <campo>
+                 <nombre>tipo</nombre>
+                 <alias>Tipo</alias>          
+             </campo>                                			 
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>3</tipo>  
+         <nombre>c_fractura</nombre>   
+         <alias>FRACTURAS</alias>   
+         <campos>
+             <campo>
+                 <nombre>gid</nombre>
+                 <alias>id</alias>          
+             </campo>                                			 
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>c_tiradero</nombre>   
+         <alias>RELLENOS SANITARIOS</alias>   
+         <campos>
+             <campo>
+                 <nombre>municipio</nombre>
+                 <alias>Municipio</alias>          
+             </campo>                                
+			   <campo>
+                 <nombre>clasificac</nombre>
+                 <alias>Tipo</alias>          
+             </campo>    
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>c_tiradero</nombre>   
+         <alias>RELLENOS SANITARIOS</alias>   
+         <campos>
+             <campo>
+                 <nombre>municipio</nombre>
+                 <alias>Municipio</alias>          
+             </campo>                                
+			   <campo>
+                 <nombre>clasificac</nombre>
+                 <alias>Tipo</alias>          
+             </campo>    
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>tipo_suelo</nombre>   
+         <alias>EDAFOLOGÍA</alias>   
+         <campos>
+             <campo>
+                 <nombre>distinct(clave_wrb)</nombre>
+                 <alias>WRB</alias>          
+             </campo>                                
+			 <campo>
+                 <nombre>n_g1 || * * || n_cs_g1 || * * ||  n_cp_g1 || * + *|| n_g2 || * * ||  n_cs_g2 || * * || n_cp_g2 || * + * ||  n_g3 || * * ||  n_cs_g3 || * * || n_cp_g3</nombre>
+                 <alias>Descripción</alias>          
+             </campo>  
+			 <campo>
+                 <nombre>textura</nombre>
+                 <alias>Textura</alias>          
+             </campo>	
+					 
+         </campos>
+         
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>cam</nombre>   
+         <alias>CENTROS DE ASISTENCIA MÉDICA</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>aeropuertos</nombre>   
+         <alias>AEROPUERTOS</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>aduanas</nombre>   
+         <alias>ADUANAS</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla>
+
+		<tabla> 
+         <tipo>1</tipo>  
+         <nombre>c_tipo_roca</nombre>   
+         <alias>TIPO DE ROCA</alias>   
+         <campos>
+             <campo>
+                 <nombre>distinct(tipo)</nombre>
+                 <alias>Tipo</alias>          
+             </campo>                                
+         </campos>
+         <orden>tipo</orden>
+    </tabla> 	
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>primaria</nombre>   
+         <alias>ESCUELAS PRIMARIAS</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>secundaria</nombre>   
+         <alias>ESCUELAS SECUNDARIAS</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla> 
+	
+	
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>medio_sup</nombre>   
+         <alias>ESCUELAS DE EDUCACIÓN MEDIA SUPERIOR</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla> 
+	
+	<tabla> 
+         <tipo>1</tipo>  
+         <nombre>superior</nombre>   
+         <alias>ESCUELAS DE EDUCACIÓN SUPERIOR</alias>   
+         <campos>
+             <campo>
+                 <nombre>nombre</nombre>
+                 <alias>Nombre</alias>          
+             </campo>                                
+         </campos>
+         <orden>nombre</orden>
+    </tabla> 
+	
+	<tabla> 
+         <tipo>4</tipo>  
+         <nombre>loc_rur</nombre>   
+         <alias>LOCALIDADES RURALES</alias>   
+         <campos>
+             <campo>
+                 <nombre>cvegeo</nombre>
+                 <alias>Localidad</alias>          
+             </campo>
+			 <campo>
+                 <nombre>nom_loc</nombre>
+                 <alias>Nombre</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>pob1</nombre>
+                 <alias>Población total</alias>          
+             </campo>
+			 <campo>
+                 <nombre>pob8</nombre>
+                 <alias>Población de 0 a 14 años</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>pob11</nombre>
+                 <alias>Población de 15 a 29 años</alias>          
+             </campo>
+			 <campo>
+                 <nombre>pob12</nombre>
+                 <alias>Población de 15 a 64 años</alias>          
+             </campo>  
+			 <campo>
+                 <nombre>pob14</nombre>
+                 <alias>Población de 30 a 49 años</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>mig1</nombre>
+                 <alias>Población nacida en la entidad</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>disc1</nombre>
+                 <alias>Población con discapacidad</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu31</nombre>
+                 <alias>Población de 15 años y más sin escolaridad</alias>          
+             </campo>    
+			 <campo>
+                 <nombre>edu34</nombre>
+                 <alias>Población de 15 años y más con eduación básica incompleta</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu37</nombre>
+                 <alias>Población de 15 años y más con educación básica completa</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu40</nombre>
+                 <alias>Población de 15 años y más con educación pos-básica</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu43</nombre>
+                 <alias>Población de 18 años y más con al menos un grado en educación media superior</alias>          
+             </campo>  
+			 <campo>
+                 <nombre>edu46</nombre>
+                 <alias>Población de 25 años y más con al menos un grado aprobado en educación superior</alias>          
+             </campo> 
+			<campo>
+                 <nombre>edu49_r</nombre>
+                 <alias>Grado promedio de escolaridad</alias>          
+             </campo> 
+			<campo>
+                 <nombre>eco1</nombre>
+                 <alias>Población económicamente activa</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>eco4</nombre>
+                 <alias>Población Ocupada</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>eco25</nombre>
+                 <alias>Población Desocupada</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>eco28</nombre>
+                 <alias>Población no económicamente activa</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>salud1</nombre>
+                 <alias>Población derechohabiente a servicios de salud</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>salud3</nombre>
+                 <alias>Población derechohabiente del IMSS</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>salud4</nombre>
+                 <alias>Población derechohabiente del ISSSTE o ISSSTE estatal</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv0</nombre>
+                 <alias>Total de viviendas</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv1</nombre>
+                 <alias>Total de viviendas habitadas</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv2</nombre>
+                 <alias>Viviendas particulares habitadas</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv3</nombre>
+                 <alias>Ocupantes en viviendas particulares</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv24</nombre>
+                 <alias>Viviendas particulares habitadas que disponen de luz eléctrica, agua entubada en el ámbito de la vivienda y drenaje</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv30</nombre>
+                 <alias>Viviendas particulares habitadas que no disponen de refrigerador, lavadora ni automóvil o camioneta</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv40</nombre>
+                 <alias>Viviendas particulares habitadas sin tecnologías de la información y la comunicación (TIC)</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv41</nombre>
+                 <alias>Viviendas particulares habitadas sin ningún bien</alias>          
+             </campo>
+         </campos>
+         <orden>cvegeo</orden>
+    </tabla> 
+	
+	
+		<tabla> 
+         <tipo>4</tipo>  
+         <nombre>mza_pob</nombre>   
+         <alias>INFRAESTRUCTURA HUMANA</alias>   
+         <campos>
+             <campo>
+                 <nombre>cvegeo</nombre>
+                 <alias>Clave de manzana</alias>          
+             </campo>		
+			 <campo>
+                 <nombre>pob1</nombre>
+                 <alias>Población total</alias>          
+             </campo>
+			 <campo>
+                 <nombre>pob8</nombre>
+                 <alias>Población de 0 a 14 años</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>pob11</nombre>
+                 <alias>Población de 15 a 29 años</alias>          
+             </campo>
+			 <campo>
+                 <nombre>pob12</nombre>
+                 <alias>Población de 15 a 64 años</alias>          
+             </campo>  
+			 <campo>
+                 <nombre>pob14</nombre>
+                 <alias>Población de 30 a 49 años</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>mig1</nombre>
+                 <alias>Población nacida en la entidad</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>disc1</nombre>
+                 <alias>Población con discapacidad</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu31</nombre>
+                 <alias>Población de 15 años y más sin escolaridad</alias>          
+             </campo>    
+			 <campo>
+                 <nombre>edu34</nombre>
+                 <alias>Población de 15 años y más con eduación básica incompleta</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu37</nombre>
+                 <alias>Población de 15 años y más con educación básica completa</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu40</nombre>
+                 <alias>Población de 15 años y más con educación pos-básica</alias>          
+             </campo> 
+			 <campo>
+                 <nombre>edu43</nombre>
+                 <alias>Población de 18 años y más con al menos un grado en educación media superior</alias>          
+             </campo>  
+			 <campo>
+                 <nombre>edu46</nombre>
+                 <alias>Población de 25 años y más con al menos un grado aprobado en educación superior</alias>          
+             </campo> 
+			<campo>
+                 <nombre>edu49_r</nombre>
+                 <alias>Grado promedio de escolaridad</alias>          
+             </campo> 
+			<campo>
+                 <nombre>eco1</nombre>
+                 <alias>Población económicamente activa</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>eco4</nombre>
+                 <alias>Población Ocupada</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>eco25</nombre>
+                 <alias>Población Desocupada</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>eco28</nombre>
+                 <alias>Población no económicamente activa</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>salud1</nombre>
+                 <alias>Población derechohabiente a servicios de salud</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>salud3</nombre>
+                 <alias>Población derechohabiente del IMSS</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>salud4</nombre>
+                 <alias>Población derechohabiente del ISSSTE o ISSSTE estatal</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv0</nombre>
+                 <alias>Total de viviendas</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv1</nombre>
+                 <alias>Total de viviendas habitadas</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv2</nombre>
+                 <alias>Viviendas particulares habitadas</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv3</nombre>
+                 <alias>Ocupantes en viviendas particulares</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv24</nombre>
+                 <alias>Viviendas particulares habitadas que disponen de luz eléctrica, agua entubada en el ámbito de la vivienda y drenaje</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv30</nombre>
+                 <alias>Viviendas particulares habitadas que no disponen de refrigerador, lavadora ni automóvil o camioneta</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv40</nombre>
+                 <alias>Viviendas particulares habitadas sin tecnologías de la información y la comunicación (TIC)</alias>          
+             </campo> 
+
+			<campo>
+                 <nombre>viv41</nombre>
+                 <alias>Viviendas particulares habitadas sin ningún bien</alias>          
+             </campo>
+         </campos>
+         <orden>cvegeo</orden>
+    </tabla> 
+	
+	<tabla>
+		<tipo>4</tipo>  
+        <nombre>entorno_urbano</nombre>
+        <alias>ENTORNO URBANO (INV2016)</alias>
+		<campos>
+			<campo>
+				<nombre>cvegeo</nombre>
+				<alias>Clave de manzana</alias>
+			</campo>
+			<campo>
+				<nombre>vivtot</nombre>
+				<alias>Total de viviendas</alias>
+			</campo>
+			<campo>
+				<nombre>tvivhab</nombre>
+				<alias>Total de viviendas habitadas</alias>
+			</campo>
+			<campo>
+				<nombre>p_tvivhab</nombre>
+				<alias>% Total de viviendas habitadas</alias>
+			</campo>
+			<campo>
+				<nombre>tvivpar</nombre>
+				<alias>Total de viviendas particulares</alias>
+			</campo>
+			<campo>
+				<nombre>p_tvivpar</nombre>
+				<alias>% Total de viviendas particulares</alias>
+			</campo>
+			<campo>
+				<nombre>tvivparhab</nombre>
+				<alias>Viviendas particulares habitadas</alias>
+			</campo>
+			<campo>
+				<nombre>pvivparhab</nombre>
+				<alias>% Viviendas particulares habitadas</alias>
+			</campo>
+			<campo>
+				<nombre>vivpar_des</nombre>
+				<alias>Viviendas particulares deshabitadas</alias>
+			</campo>
+			<campo>
+				<nombre>p_vivpar_d</nombre>
+				<alias>% Viviendas particulares deshabitadas</alias>
+			</campo>
+			<campo>
+				<nombre>vivpar_ut</nombre>
+				<alias>Viviendas particulares de uso temporal</alias>
+			</campo>
+			<campo>
+				<nombre>p_vivpar_u</nombre>
+				<alias>% Viviendas particulares de uso temporal</alias>
+			</campo>
+			<campo>
+				<nombre>vivnohab</nombre>
+				<alias>Viviendas particulares no habitadas</alias>
+			</campo>
+			<campo>
+				<nombre>p_vivnohab</nombre>
+				<alias>% Viviendas particulares de uso temporal</alias>
+			</campo>
+			<campo>
+				<nombre>vph_pisodt</nombre>
+				<alias>Con recubrimiento en piso</alias>
+			</campo>
+			<campo>
+				<nombre>p_v_pisodt</nombre>
+				<alias>% Con recubrimiento en piso</alias>
+			</campo>
+			<campo>
+				<nombre>vph_c_elec</nombre>
+				<alias>Con energía eléctrica</alias>
+			</campo>
+			<campo>
+				<nombre>p_v_c_elec</nombre>
+				<alias>% Con energía eléctrica</alias>
+			</campo>
+			<campo>
+				<nombre>vph_aguadv</nombre>
+				<alias>Con agua entubada</alias>
+			</campo>
+			<campo>
+				<nombre>p_v_aguadv</nombre>
+				<alias>% Con agua entubada</alias>
+			</campo>
+			<campo>
+				<nombre>vph_drenaj</nombre>
+				<alias>Con drenaje</alias>
+			</campo>
+			<campo>
+				<nombre>p_v_drenaj</nombre>
+				<alias>% Con drenaje</alias>
+			</campo>
+			<campo>
+				<nombre>vph_excusa</nombre>
+				<alias>Con servicio sanitario</alias>
+			</campo>
+			<campo>
+				<nombre>p_v_excusa</nombre>
+				<alias>% Con servicio sanitario</alias>
+			</campo>
+			<campo>
+				<nombre>v_3masocup</nombre>
+				<alias>Viviendas con 3 o más ocupantes por cuarto</alias>
+			</campo>
+			<campo>
+				<nombre>p_3masocup</nombre>
+				<alias>% Viviendas con 3 o más ocupantes por cuarto</alias>
+			</campo>
+			<campo>
+				<nombre>proocup_c</nombre>
+				<alias>Promedio de ocupantes por vivienda</alias>
+			</campo>
+			<campo>
+				<nombre>pobtot</nombre>
+				<alias>Población total</alias>
+			</campo>
+			<campo>
+				<nombre>p0a14a</nombre>
+				<alias>Población de 0 a 14 años</alias>
+			</campo>
+			<campo>
+				<nombre>pp0a14a</nombre>
+				<alias>% Población de 0 a 14 años</alias>
+			</campo>
+			<campo>
+				<nombre>p15a29a</nombre>
+				<alias>Población de 15 a 29 años</alias>
+			</campo>
+			<campo>
+				<nombre>pp15a29a</nombre>
+				<alias>% Población de 15 a 29 años</alias>
+			</campo>
+			<campo>
+				<nombre>p30a59a</nombre>
+				<alias>Población de 30 a 59 años</alias>
+			</campo>
+			<campo>
+				<nombre>pp30a59a</nombre>
+				<alias>% Población de 30 a 59 años</alias>
+			</campo>
+			<campo>
+				<nombre>p_60ymas</nombre>
+				<alias>Población de 60 y más años</alias>
+			</campo>
+			<campo>
+				<nombre>pp_60ymas</nombre>
+				<alias>% Población de 60 y más años</alias>
+			</campo>
+			<campo>
+				<nombre>pcon_lim</nombre>
+				<alias>Población con discapacidad</alias>
+			</campo>
+			<campo>
+				<nombre>ppcon_lim</nombre>
+				<alias>% Población con discapacidad</alias>
+			</campo>
+			<campo>
+				<nombre>graproes</nombre>
+				<alias>Promedio de escolaridad</alias>
+			</campo>
+			<campo>
+				<nombre>acesoper_</nombre>
+				<alias>Acceso de personas</alias>
+			</campo>
+			<campo>
+				<nombre>acesoaut_</nombre>
+				<alias>Acceso de automóviles</alias>
+			</campo>
+			<campo>
+				<nombre>recucall_</nombre>
+				<alias>Pavimento de calles</alias>
+			</campo>
+			<campo>
+				<nombre>senaliza_</nombre>
+				<alias>Letrero con nombre de la vialidad</alias>
+			</campo>
+			<campo>
+				<nombre>alumpub_</nombre>
+				<alias>Alumbrado público</alias>
+			</campo>
+			<campo>
+				<nombre>telpub_</nombre>
+				<alias>Teléfono público</alias>
+			</campo>
+			<campo>
+				<nombre>banqueta_</nombre>
+				<alias>Banqueta</alias>
+			</campo>
+			<campo>
+				<nombre>guarnici_</nombre>
+				<alias>Guarnición</alias>
+			</campo>
+			<campo>
+				<nombre>arboles_</nombre>
+				<alias>Plantas de ornato</alias>
+			</campo>
+			<campo>
+				<nombre>rampas_</nombre>
+				<alias>Rampa para silla de ruedas</alias>
+			</campo>
+			<campo>
+				<nombre>puessemi_</nombre>
+				<alias>Presencia de comercio semifijo</alias>
+			</campo>
+			<campo>
+				<nombre>puesambu_</nombre>
+				<alias>Presencia de comercio ambulante</alias>
+			</campo>
+			<campo>
+				<nombre>acesoper_c</nombre>
+				<alias>Acceso de personas</alias>
+			</campo>
+			<campo>
+				<nombre>acesoaut_c</nombre>
+				<alias>Acceso de automóviles</alias>
+			</campo>
+			<campo>
+				<nombre>recucall_c</nombre>
+				<alias>Pavimento de calles</alias>
+			</campo>
+			<campo>
+				<nombre>senaliza_c</nombre>
+				<alias>Letrero con nombre de la vialidad</alias>
+			</campo>
+			<campo>
+				<nombre>alumpub_c</nombre>
+				<alias>Alumbrado público</alias>
+			</campo>
+			<campo>
+				<nombre>telpub_c</nombre>
+				<alias>Teléfono público</alias>
+			</campo>
+			<campo>
+				<nombre>banqueta_c</nombre>
+				<alias>Banqueta</alias>
+			</campo>
+			<campo>
+				<nombre>guarnici_c</nombre>
+				<alias>Guarnición</alias>
+			</campo>
+			<campo>
+				<nombre>arboles_c</nombre>
+				<alias>Plantas de ornato</alias>
+			</campo>
+			<campo>
+				<nombre>rampas_c</nombre>
+				<alias>Rampa para silla de ruedas</alias>
+			</campo>
+			<campo>
+				<nombre>puessemi_c</nombre>
+				<alias>Presencia de comercio semifijo</alias>
+			</campo>
+			<campo>
+				<nombre>puesambu_c</nombre>
+				<alias>Presencia de comercio ambulante</alias>
+			</campo>
+			<campo>
+				<nombre>fecha_poli</nombre>
+				<alias>Fecha de la última actualización del polígono</alias>
+			</campo>
+			<campo>
+				<nombre>fecha_inf</nombre>
+				<alias>Fecha de la información</alias>
+			</campo>
+			<campo>
+				<nombre>fecha_ceu</nombre>
+				<alias>Fecha del Cuestionario de Entorno Urbano</alias>
+			</campo>
+		</campos>
+		<orden>cvegeo</orden>
+	</tabla>
+	
+</tablas>

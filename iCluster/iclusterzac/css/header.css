@@ -1,0 +1,55 @@
+#headerLogoINEGI{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    z-index: 2;
+}
+#headerLogoMDM{
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    z-index: 3;
+}
+.headerBackground{
+    background-image: url('../img/header-background.jpg');
+    background-repeat: repeat-x;
+    z-index: 2000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 55px;
+    overflow: hidden;
+}
+#headerBtnEvalua{
+	position: absolute;
+	right: 359px;
+	top: 0px;
+	z-index: 3;
+	
+	cursor: pointer;
+}
+
+#module_header{
+	position: absolute;
+        left: 70px;
+	top: 15px;
+	width:100%;
+	float:left;
+	font-size:x-large;
+	padding-bottom:4px;
+	font-weight:bold;
+	color:grey
+
+}
+#module_nb{
+	position: absolute;
+        left: 117px;
+	top: 15px;
+	width:100%;
+	float:left;
+	font-size:x-large;
+	padding-bottom:4px;
+	color:grey
+
+}

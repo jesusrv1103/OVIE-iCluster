@@ -1,0 +1,83 @@
+html, body{margin: 0;width: 100%;height: 100%;overflow: hidden;font-size: 78%;font-family: arial;}
+.content{position: absolute; left: 0px; right: 0px; top: 55px; bottom: 0px;}			
+#lateral{width: 33%;height:100%;float: left;top: 55px;border-right:1px solid #999999;overflow:scroll;overflow-x:hidden;}
+#contenido{width: 66.5%;height:96%;float:right;top: 55px;}
+#content{height: 100%;overflow: hidden;	border-left: 1px;}
+#despliegue{height: 100%;width:100%;overflow: hidden;}
+header{
+	background-image: url('../../img/header-background.jpg');
+    background-repeat: repeat-x;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 55px;
+    overflow: hidden;   
+    text-align: center;
+}
+footer {
+	background-image: url('../../img/header-background.jpg');
+    background-repeat: repeat-x;
+    z-index: 1;
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	left: 0;
+	padding: 1rem; 
+    clear: left;
+    text-align: center;
+}
+
+
+.btn{
+    height:30px;
+    line-height:30px;
+    vertical-align:middle;
+    text-align:center;
+    padding:0 10px;
+    color:#ffffff;
+    background-color:#007bff;
+    position:relative;
+    display:inline-block;
+	text-decoration: none;
+}
+.btn:after{
+    position:absolute;
+    right:-20px;
+    content:" ";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #007bff;
+}
+.btn:hover{
+    background-color:red;
+}
+.btn:hover:after{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #ff0000;
+}
+
+.btnDescarga{
+	float: left;
+	#border-radius: 25px;	
+	cursor: pointer;	
+	width: 30px;
+	height: 30px; 
+	#display:block;
+	#padding: 2px 2px 1px 2px;
+	background-color: #C0C0C0;
+	
+}
+.btnDescarga:hover{
+	border: 1px solid #0094FF;	
+}	
+
+#imgdes{
+	height:30px;
+}

@@ -1,0 +1,228 @@
+define(function() {
+	var data = {
+       		themes:{
+		    T2:{
+                label:'Limite Estatal',
+                layers:[
+                    'c100'
+                ],
+                desc:'Marco Geoestadístico',
+                img:'nl.png'
+            },
+            
+            T3:{
+                label:'Limite Municipal',
+                layers:[
+                    'c101'
+                ],
+                desc:'Marco Geoestadístico',
+                img:'mun.png'
+            },
+            
+            T4:{
+                label:'Localidades Urbanas',
+                layers:[
+                    'c102'
+                ],
+                desc:'Marco Geoestadístico',
+                img:'loc.png'
+            }
+        },
+			
+   	
+  
+        	baseLayers:{
+			B1:{
+                		type:'Wms',
+                		label:'Topogr&aacute;fico sin sombreado- INEGI',
+                		img:'mapa_sin_sombreado.jpg',		             
+                		url:['http://gaiamapas1.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas3.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas2.inegi.org.mx/mdmCache/service/wms?'],
+				layer:'MapaBaseTopograficov61_sinsombreado',
+                		rights:'Derechos Reservados &copy; INEGI',
+                		tiled:true,
+				legendlayer:['c100','c101','c102'],
+                		desc:'REPRESENTACION DE RECURSOS NATURALES Y CULTURALES DEL TERRITORIO NACIONAL A ESCALA 1: 250 000, BASADO EN IMAGENES DE SATELITE DEL  2002 Y TRABAJO DE CAMPO REALIZADO EN 2003',
+                		clasification:'VECTORIAL'
+            		},
+			B2:{
+               			type:'Wms',
+                		label:'Topogr&aacute;fico con sombreado- INEGI',
+                		img:'mapa_con_sombreado.jpg',		             
+                		url:['http://gaiamapas1.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas3.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas2.inegi.org.mx/mdmCache/service/wms?'],
+				layer:'MapaBaseTopograficov61_consombreado',
+                		rights:'Derechos Reservados &copy; INEGI',
+                		tiled:true,
+				legendlayer:['c100','c101','c102','c102-r','c102m','c103','c109','c110','c111','c112','c200','c201','c202','c203','c206','c300','c301','c302','c310','c311','c762','c793','c795'],
+                		desc:'REPRESENTACION DE RECURSOS NATURALES Y CULTURALES DEL TERRITORIO NACIONAL A ESCALA 1: 250 000, BASADO EN IMAGENES DE SATELITE DEL  2002 Y TRABAJO DE CAMPO REALIZADO EN 2003',
+                		clasification:'VECTORIAL'
+            		},
+            		B3:{
+                		type:'Wms',
+                		label:'Hipsogr&aacute;fico - INEGI',
+                		img:'baseHipsografico.jpg',		             
+                		url:['http://gaiamapas1.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas3.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas2.inegi.org.mx/mdmCache/service/wms?'],
+                		layer:'MapaBaseHipsografico',
+				rights:'&copy; INEGI 2013',
+                		tiled:true,
+                		legendlayer:['img_altimetria.png'],
+                		desc:'IMAGEN DE RELIEVE QUE MUESTRA UNA COMBINACION DE ELEVACION A TRAVES DE COLORES HIPSOGRAFICOS, GENERADA POR PROCESAMIENTO DEL CONTINUO DE ELEVACIONES MEXICANOS DE 3.0 DE 15 METROS.',
+                		clasification:'RASTER'
+            		},
+            		B4:{
+                		type:'Wms',
+                		label:'Ortofotos - INEGI',
+                		img:'baseOrtos.jpg',		             
+                		url:['http://gaiamapas1.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas3.inegi.org.mx/mdmCache/service/wms?','http://gaiamapas2.inegi.org.mx/mdmCache/service/wms?'],
+                		layer:'MapaBaseOrtofoto',
+				rights:'&copy; INEGI 2013',
+                		tiled:true,
+                		desc:'CONJUNTO DE IMAGENES AEREAS ORTORECTIFICADAS A DIVERSAS ESCALAS Y RESOLUCIONES, PROVENIENTES DEL ACERVO DE ORTOFOTOS DE INEGI Y QUE CORRESPONDEN A TOMAS REALIZADAS EN EL LAPSO 2005-2012.',
+                		clasification:'RASTER'
+                	},			
+            		B5:{
+                		type:'Osm',
+                		label:'Open Street Map',
+                		img:'Osm.jpg',
+                		rights:'&copy; OpenStreetMap contributors',
+                		clasification:'VECTORIAL'
+            		},
+            		B6:{
+                		type:'Google',
+                		label:'Google Sat&eacute;lite',
+                		img:'Google.jpg',
+                		layer:'google.maps.MapTypeId.SATELLITE',
+                		rights:'&copy; Google',
+                		clasification:'RASTER'
+            		}, 
+			B7:{
+                		type:'Esri',
+                		label:'Esri map',
+                		img:'Esri.jpg',
+                		url:'http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/${z}/${y}/${x}',
+                		rights:'&copy; ESRI',
+				clasification:'VECTORIAL'
+            		},
+        	},
+layers:{
+	groups:{
+			G1:{
+           label:'L&iacute;mites del Marco Geoestad&iacute;stico',
+          layers:{
+                     c100:{
+							label:'Estatales',
+							synonymous:['estado','estatales'],
+							scale:0,
+							position:1,
+							active:true,
+							texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+                         },
+                        	
+                     c101:{
+							label:'Municipales',
+							synonymous:['municipio','municipales','municipal'],
+							scale:0,
+							position:2,
+							active:true,
+							texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+                         	},
+                         	
+                     c102:{
+							label:'Localidades Urbanas',
+							synonymous:['Localidades Urbanas'],
+							scale:0,
+							position:3,
+							active:false,
+							texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+                         },
+                    
+                     c_ageb:{
+							label:'Agebs Urbanas',
+							synonymous:['Ageb'],
+							scale:0,
+							position:4,
+							active:false,
+texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+                         },
+                    c_mza:{
+							label:'Manzanas',
+							synonymous:['Manzanas'],
+							scale:0,
+							position:5,
+							active:false,
+texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+                         },
+                     c_vial:{
+							label:'Vialidades',
+							synonymous:['calles'],
+							scale:0,
+							position:6,
+							active:false,
+texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+                         },
+						c_agebr:{
+                            label:'Agebs rurales',
+                            synonymous:['Agebs rurales'],
+                            scale:0,
+                            position:7,
+                            active:false,
+texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+						},
+				c_lpr:{
+                            label:'Localidades rurales',
+                            synonymous:['Localidades rurales'],
+                            scale:0,
+                            position:6,
+                            active:false,
+texts:{
+                                  	scale:1,
+                                  	active:false
+                               	}
+						}
+                    
+                             	
+                     }
+          },        
+                  
+          G3:{
+           label:'Directorio Nacional de Unidades Econ&oacute;micas DENUE ',
+          layers:{
+                     c_denue_2014:{
+							label:'Establecimientos econ&oacute;micos DENUE',
+							synonymous:['DENUE'],
+							scale:0,
+							position:10,
+							active:false
+                         	}
+                     }
+          },
+          
+        }
+   	}
+ };
+    	
+	if(typeof(treeConfig)!='undefined'){
+        	data = $.extend(data, treeConfig);
+    	}
+    	return data;
+});

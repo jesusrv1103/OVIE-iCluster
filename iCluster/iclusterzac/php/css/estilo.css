@@ -1,0 +1,152 @@
+  .button:hover {         
+        background: #dcdcdc  5px center;
+		border:1px solid #999999;
+        cursor: pointer;
+    }
+.textbuttongraf{
+	background:url(../imagenes/grafica_h.png) 8% 50% no-repeat;background-size: 20px 20px;
+	width:170px !important;
+	border: 1px solid #d3d3d3;
+	#border-radius:5px !important;
+	-webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 30px !important;
+    padding-bottom: 0px !important;
+	cursor: pointer !important;
+}
+.textbuttongraf:hover{	
+	background:url(../imagenes/grafica_h2.png) 8% 50% no-repeat;background-size: 20px 20px;
+	background-color: #d3d3d3 !important;
+	border: 1px solid #8E8E8E;
+}	
+.textbuttontema{	
+	background-color: #ffffff !important;
+	width:100px !important;
+	border: 1px solid #d3d3d3;	
+	-webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+    padding-bottom: 0px !important;
+	cursor: pointer !important;
+}
+.textbuttontema:hover{		
+	background-color: #d3d3d3 !important;
+	border: 1px solid #8E8E8E;
+}
+
+.textbuttoneltema{	
+	background-color: #ffffff !important;
+	width:100px !important;
+	border: 1px solid #d3d3d3;	
+	-webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+    padding-bottom: 0px !important;
+	cursor: pointer !important;
+}
+.textbuttoneltema:hover{		
+	background-color: #d3d3d3 !important;
+	border: 1px solid #8E8E8E;
+}
+.fieldsetc{	
+	
+	width:335px !important;
+	border: 2px solid #d3d3d3;
+	border-radius:5px !important;	
+	#height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 10px !important;
+    padding-bottom: 0px !important;
+
+}
+.textbuttonestab{
+	background:url(../imagenes/ver_mapa.png) 5% 50% no-repeat;background-size: 20px 20px;
+	width:150px !important;
+	border: 1px solid #d3d3d3;
+	#border-radius:5px !important;
+	-webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	
+	height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 30px !important;
+    padding-bottom: 0px !important;
+	cursor: pointer !important;
+}
+.textbuttonestab:hover{	
+	background:url(../imagenes/ver_mapa2.png) 5% 50% no-repeat;background-size: 20px 20px;
+	background-color: #d3d3d3 !important;
+	border: 1px solid #8E8E8E;
+}	
+	
+	
+.textbuttoneco{
+	background:url(../imagenes/grafica_e.png) 5% 50% no-repeat;background-size: 20px 20px;
+	width:160px !important;
+	border: 1px solid #d3d3d3;
+	#border-radius:5px !important;
+	-webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 30px !important;
+    padding-bottom: 0px !important;
+	cursor: pointer !important;
+}
+.textbuttoneco:hover{	
+	background:url(../imagenes/grafica_e2.png) 5% 50% no-repeat;background-size: 20px 20px;
+	background-color: #d3d3d3 !important;
+	border: 1px solid #8E8E8E;
+}	   
+
+.textbuttonborra{
+	background:url(../imagenes/check.png) 2% 50% no-repeat;background-size: 20px 20px;
+	width:184px !important;
+	border: 1px solid #d3d3d3;
+	#border-radius:5px !important;
+	-webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	
+	height:25px !important;
+	font-weight:bold !important;
+	padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 23px !important;
+    padding-bottom: 0px !important;
+	cursor: pointer !important;
+}
+.textbuttonborra:hover{	
+	background:url(../imagenes/check2.png) 2% 50% no-repeat;background-size: 20px 20px;
+	background-color: #d3d3d3 !important;
+	border: 1px solid #8E8E8E;
+}	

@@ -1,0 +1,77 @@
+﻿<?php
+$conn = pg_connect("host=10.4.16.77 dbname=agrupa user=postgres password=Agrupa2017 port=5433") or die('Could not connect: ' . pg_last_error());	
+$id=$_GET['id'];
+$tipo=$_GET['tipo'];
+$clases="";
+$primero=true;
+/*
+if ($tipo==3){
+    
+	
+	
+}else{
+    $query = "SELECT clases_$corte FROM clusters where nombre = '$dato'";
+    $result = pg_query($query) or die('Query failed: ' . pg_last_error());
+    $row=  pg_fetch_array($result);
+    $clases= $row[0];
+    $clases=str_replace(",","','",$clases);
+    $clases= "'".$clases."'";
+}
+
+*/
+if ($tipo=='3'){
+	$query = "SELECT d_llave FROM elem_grupos where id_grupo like '".$id."_%'";
+    $resultado = pg_query($query) or die('Query failed: ' . pg_last_error());
+    while($row= pg_fetch_array($resultado)){
+        if ($primero){
+            $clases=$row[0];        
+            $primero=false;
+        }else{
+            $clases=$clases.",".$row[0];        
+        }
+    }
+    if (substr($clases,-1)==","){
+    $clases=substr($clases, 0, -1);
+    }
+    $clases=str_replace(",","','",$clases);
+    $clases= "'".$clases."'";    	
+	$query = "SELECT row_to_json(fc)
+	FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+	FROM (SELECT 'Feature' As type
+		, ST_AsGeoJSON(the_geom)::json As geometry
+		, row_to_json((SELECT l FROM (SELECT nom_estab) As l
+		)) As properties FROM c_denue_2014 where id in ($clases)) As f )  As fc;";				
+}else if($tipo=='2'){	
+	$query = "SELECT clases_2014 FROM clusters where idx = '$id'";
+    $result = pg_query($query) or die('Query failed: ' . pg_last_error());
+    $row=  pg_fetch_array($result);
+    $clases= $row[0];
+    $clases=str_replace(",","','",$clases);
+    $clases= "'".$clases."'";
+	$query = "SELECT row_to_json(fc)
+	FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+	FROM (SELECT 'Feature' As type
+		, ST_AsGeoJSON(the_geom)::json As geometry
+		, row_to_json((SELECT l FROM (SELECT nom_estab) As l
+		)) As properties FROM c_denue_2014 where id in ($clases)) As f )  As fc;";	
+}else{
+	$query = "SELECT clases_2014 FROM clusters where idx = '$id'";
+    $result = pg_query($query) or die('Query failed: ' . pg_last_error());
+    $row=  pg_fetch_array($result);
+    $clases= $row[0];
+    $clases=str_replace(",","','",$clases);
+    $clases= "'".$clases."'";	
+	$query = "SELECT row_to_json(fc)
+	FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+	FROM (SELECT 'Feature' As type
+		, ST_AsGeoJSON(the_geom)::json As geometry
+		, row_to_json((SELECT l FROM (SELECT nom_estab) As l
+		)) As properties FROM c_denue_2014 where codigo_act in ($clases)) As f )  As fc;";		
+}
+$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+if ($row = pg_fetch_array($result)){
+	echo $row[0];
+}
+pg_free_result($resultado);
+pg_close($conn);
+?>

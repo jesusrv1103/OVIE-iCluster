@@ -1,0 +1,118 @@
+.icono{
+    background-image: url('../imagenes/delitos.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    #position: absolute;
+	#left:51px;
+	#top:100px;
+    z-index: 2;
+}
+.icono:hover{
+   background-image: url('../imagenes/delitos2.png');
+   background-repeat: no-repeat;  
+}
+.iconoaccidentes{
+    background-image: url('../imagenes/accidentes.png');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    #position: absolute;
+	#left:155px;
+	#top:100px;
+    z-index: 2;
+}
+.iconoaccidentes:hover{
+   background-image: url('../imagenes/accidentes2.png');
+   background-repeat: no-repeat;  
+}
+.iconomap{
+    background-image: url('../imagenes/ver_mapa.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+	left:100px;
+	top:123px;
+}
+.iconoagrupa{
+    background-image: url('../imagenes/agrupamientos.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    #position: absolute;
+	#left:255px;
+	#top:100px;
+    z-index: 2;
+}
+.iconoagrupa:hover{
+   background-image: url('../imagenes/agrupamientos2.png');
+   background-repeat: no-repeat;  
+}
+.iconomap:hover{
+   background-image: url('../imagenes/ver_mapa2.png');
+    background-repeat: no-repeat;
+ }
+.iconodel{
+    background-image: url('../imagenes/eraser.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+	left:130px;
+	top:125px;
+}
+.iconodel:hover{
+   background-image: url('../imagenes/eraser2.png');
+    background-repeat: no-repeat;
+ 
+}
+.iconoid{
+    background-image: url('../imagenes/id.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+	left:160px;
+	top:125px;
+}
+.iconoid:hover{
+   background-image: url('../imagenes/id2.png');
+    background-repeat: no-repeat;
+ 
+}
+.seleccion {
+background:url('../imagenes/id2.png') no-repeat !important;
+-webkit-appearance: none;
+-moz-appearance: none;
+border: medium none;
+color: #5D5C5C !important;
+font-size: 15px;
+height: 33px;
+line-height: 33px;
+padding: 6px 10px;
+width: 255px;
+}
+
+.iconomarcar{
+    background-image: url('../imagenes/check.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    #position: absolute;
+	#left:255px;
+	#top:100px;
+    z-index: 2;
+}
+.iconomarcar:hover{
+   background-image: url('../imagenes/check2.png');
+   background-repeat: no-repeat;  
+}
+
+.letra{
+	font-family: arial;
+	width: 280px;
+}
